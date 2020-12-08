@@ -1,7 +1,13 @@
 # The Neural SLAM model.
 The neural network of the Neural SLAM consist of **Feature extraction part**, **Map prediction part**, and **Position estimator**.
 then there  and the second for Position estimation)
-## Feature extraction part
+
+## General discreption
+The **Feature extraction part** consist of *first 8 layers of pretrained resnet18* then *2 fully-connected layers* trained with dropout. The **Map prediction part** consist of *3 deconvolutional layers*. The **Position estimator** consists of *3 convolutional layers then 3 fully connected layers*.
+
+## More detales 
+More specifice detales about the components of each part
+### 1- Feature extraction part
 the feature extraction part is a convolution part then linear layers that extracts features:
 1. first 8 layers of resnet18 (pretrained) output shape will be **(7x7)** with **512** channels
 2. conv2d -> output **64** channels
@@ -13,7 +19,7 @@ the feature extraction part is a convolution part then linear layers that extrac
 8. Linear layer ->  output **4096**
 9. ReLU layer
 
-## Map prediction deconvolutional network
+### 2- Map prediction deconvolutional network
 the map prediction is a deconvolution part to create a map prediction using the features from the previous part. this network consist of the following parts:
 0. Change the shape from [4096] to [-1 (**batchsize**), 64, 8, 8]
 1. ConvTranspose2d (out_channels: **32**, kernel_size: **(4x4)**, stride **(2, 2)**, padding: **(1, 1)**)
@@ -25,7 +31,7 @@ the map prediction is a deconvolution part to create a map prediction using the 
 
 The final two layers are: (the first is for predicted map (**free space**), and the second is for the explored area (**free space and obstacles**)
 
-## Pose Estimator convolutional network
+### 3- Pose Estimator convolutional network
 This part predict the position of the robot using the current local map and the previous local map after transform it to match the current local map and it consist of 
 1. ConvTranspose2d (out_channels: **64**, kernel_size: **(4x4)**, stride **(2, 2)**) *The input for the this layer is the current local predicted map (two layers), and the last local predicted map (two layers)*
 2. ReLU layer
