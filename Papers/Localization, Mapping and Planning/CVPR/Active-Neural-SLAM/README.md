@@ -1,6 +1,5 @@
 # The Neural SLAM model.
 The neural network of the Neural SLAM consist of **Feature extraction part**, **Map prediction part**, and **Position estimator**.
-then there  and the second for Position estimation)
 
 ## General discreption
 The **Feature extraction part** consist of *first 8 layers of pretrained resnet18* then *2 fully-connected layers* trained with dropout. The **Map prediction part** consist of *3 deconvolutional layers*. The **Position estimator** consists of *3 convolutional layers then 3 fully connected layers*.
