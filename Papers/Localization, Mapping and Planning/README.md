@@ -15,9 +15,24 @@ In this paper, the authors present a model designed safe exploration for Reinfor
 
 ## ACTIVE NEURAL LOCALIZATION
 
-In this paper the Author *"the same author of (learning to explore using active neural slam)"* presents an improvement method for SLAM algorithms, making the algorithm **Active**, which means that the algorithm is **not only** responsible of localizing the robot, **but** also, it is responsible for deciding the next action which increase the probability of getting better localization. 
+In this paper the author *"the same author of (learning to explore using active neural slam)"* presents an improvement method for SLAM algorithms, making the algorithm **Active**, which means that the algorithm is **not only** responsible of localizing the robot, **but** also, it is responsible for deciding the next action which increase the probability of getting better localization. 
 
 ## Learning To Navigate In Complex Environments
 
-In this paper, The Autors present an end-to-end Reinforcement Learning method which learns to navigate in mazes. They present an modification to A3C method by adding new relevant predictions and losses to the task. The agent in addition to predict a **Value function** and a **Policy function**, it predicts a **Depth** from RGB, and a **Loop Closure** value, for revisiting previously visited places.
-The architecture presented, is an encoder *As in traditional A3C* then two-layer stacked LSTM after the encoder. **The Way the handel the input for the layers is interesting**     
+In this paper, the authors present an end-to-end Reinforcement Learning method which learns to navigate in mazes. They present an modification to A3C method by adding new relevant predictions and losses to the task. The agent in addition to predict a **Value function** and a **Policy function**, it predicts a **Depth** from RGB, and a **Loop Closure** value, for revisiting previously visited places.
+The architecture presented, is an encoder *As in traditional A3C* then two-layer stacked LSTM after the encoder. **The Way the handel the input for the layers is interesting**
+
+# CVPR
+
+## learning_to_explore_using_active_neural_slam
+
+## Object Goal Navigation using Goal-Oriented Semantic Exploration
+
+## Occupancy Anticipation
+
+
+# Mapping
+
+## Semantic MapNet Building Allocentric Semantic Maps and Representations from Egocentric Views
+
+In this paper, the authors present a neural network for semantic mapping "SMNet", This model presents new approach for semantic mapping by decoding the RGB images into features then transfer those features into 2D memory tensor, which is decoded into semantic map. 
