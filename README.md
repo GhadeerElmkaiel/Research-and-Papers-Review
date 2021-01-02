@@ -10,6 +10,7 @@ It contains color highlited papers for most interesting ideas persented in each 
 - CONSERVATIVE SAFETY CRITICS FOR EXPLORATION
 - PRM-RL Long-range Robotic Navigation Tasks by Combining Reinforcement Learning and Sampling-based Planning
 - Rapid Exploration with Multi-Rotors
+- Semantic MapNet Building Allocentric Semantic Maps and Representations from Egocentric Views
 #### **CVPR**
 - Learning to explore using active neural SLAM
 - Object Goal Navigation using Goal Oriented Semantic Exploration
