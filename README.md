@@ -4,7 +4,7 @@ This repository is for reviewing publications and papers in the field of Machine
 It contains color highlited papers for most interesting ideas persented in each paper.
 
 ## List of included papers
-### Localization, Mapping and Planning
+### **Localization, Mapping and Planning**
 
 - Active neural localization
 - CONSERVATIVE SAFETY CRITICS FOR EXPLORATION
@@ -16,8 +16,14 @@ It contains color highlited papers for most interesting ideas persented in each 
 - Learning to explore using active neural SLAM
 - Object Goal Navigation using Goal Oriented Semantic Exploration
 - Occupancy Anticipation for Efficient Exploration and Navigation
+#### **Mapping**
+- Semantic MapNet Building Allocentric Semantic Maps and Representations from Egocentric Views
 
 ### **General-RL**
 - Trust Region Policy Optimization (TRPO)
 - TD or not TD analyzing the role of temporal differencing in deep reinforcement learning
 - IMPALA Scalable Distributed Deep_RL with Importance Weighted Actor_Learner Architectures
+
+### **Classification, Detection, and Segmentation**
+- Where Is My Mirror (GDNet for Glass detection)
+
