@@ -26,4 +26,5 @@ It contains color highlited papers for most interesting ideas persented in each 
 
 ### **Classification, Detection, and Segmentation**
 - Where Is My Mirror (GDNet for Glass detection)
+- Don’t Hit Me. Glass Detection in Real-world Scenes.
 
