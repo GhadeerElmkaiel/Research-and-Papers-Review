@@ -25,6 +25,11 @@ It contains color highlited papers for most interesting ideas persented in each 
 - IMPALA Scalable Distributed Deep_RL with Importance Weighted Actor_Learner Architectures
 
 ### **Classification, Detection, and Segmentation**
+More detailed review of *Classification, Detection, and Segmentation* papers can be found [here](Reviewd%20Papers/Classification,%20Detection,%20and%20Segmentation/README.md) 
 - Where Is My Mirror (GDNet for Glass detection)
 - Don’t Hit Me. Glass Detection in Real-world Scenes.
+- A survey of loss functions for semantic.
+- Progressive Mirror Detection.
+- Learning a Discriminative Feature Network for Semantic Segmentation.
+
 

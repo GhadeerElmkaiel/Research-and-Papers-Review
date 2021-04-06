@@ -29,4 +29,18 @@ The **Contextual Contrast Local ** is gotten by subtracting the *Local features*
 ### EDF modules:
 It is designed to extract multi-scale mirror edge features.
 It uses *Low Level* and *High Level* features to produce a boundary map.
+________________________________________________________________
+## Learning a Discriminative Feature Network for Semantic Segmentation
+The main contribution of this paper is Discriminative Feature Network which consists of two main sub networks: 1- Smooth network. 2- Border Network.  
+- They use special **Channel Attention Block (CAB)** which uses the features from higher layers to guide the features in the lower layers.
+- This paper also uses **Refinement Residual Block (RRB)** which compine information across all channels.
+- Global average pooling layer to select more discriminative features.
 
+They show multiple usefull tricks to imporve the performance of the network such as:
+1- Flipping the input and averaging the result
+2- Deep supervision (softmax loss over different layers)
+3- Additional Border network which improves the segmentation accuracy.
+
+### Notes:
+They used Focal loss for training the border network.
+the formula they used is not totally clear. 
