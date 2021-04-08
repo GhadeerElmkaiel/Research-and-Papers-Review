@@ -5,7 +5,7 @@ ________________________________________________________________
 ## Where is My Mirror
 This paper presented (**what was in 2019**) a novel method for segmenting mirrors from *Images* using **MirrorNet** neural network.
 The main Idea of MirrorNet is to utilize  multilevel features (low level, high level) and merge them to get the final result.
-The main structure of the network is as follows:
+The main structure of the network is as follows:  
 - Feature extraction backbone (in this case was **ResNet-101**).
 - Multilevel CCFE modules (each for a certain level of feature gotten from the feature extractor)
 - CCFE modules "*Contextual Contrasted Features Extraction*" are followed by **Deconve** , **Attention** , **Conv**, then **Sigmoid** to get the result mask.
@@ -41,6 +41,13 @@ They show multiple usefull tricks to imporve the performance of the network such
 2- Deep supervision (softmax loss over different layers)
 3- Additional Border network which improves the segmentation accuracy.
 
-### Notes:
+### Notes: 
 They used Focal loss for training the border network.
 the formula they used is not totally clear. 
+________________________________________________________________
+## DA RNN: Semantic Mapping with Data Associated
+This paper is for Scene Dense Semantic Segmentation From RGB-D video input.
+There are multiple interesting ideas in this paper:
+- They used a different piplines for extracting features from RGB images, and from depth images. then fused at the end.
+- They used a memory unit for each pixle in the input image.
+- The wieghts for each memory cell are a compination of two wieghts (wieght depends on the input data, a transformed wieght "according to pixle transformation using the change in camera position").
