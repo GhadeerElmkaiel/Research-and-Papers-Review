@@ -31,5 +31,6 @@ More detailed review of *Classification, Detection, and Segmentation* papers can
 - A survey of loss functions for semantic.
 - Progressive Mirror Detection.
 - Learning a Discriminative Feature Network for Semantic Segmentation.
+- Segmenting Transparent Objects in the Wild.
 
 
