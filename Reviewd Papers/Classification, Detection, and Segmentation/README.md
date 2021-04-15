@@ -53,10 +53,18 @@ There are multiple interesting ideas in this paper:
 - The wieghts for each memory cell are a compination of two wieghts (wieght depends on the input data, a transformed wieght "according to pixle transformation using the change in camera position").
 ________________________________________________________________
 ## Segmenting Transparent Objects in the Wild.
-This paper presents an improvment in the field of semantic segmentation for transparent objects.
+This paper presents an improvment in the field of semantic segmentation for transparent objects (with two main classes **Things** & **Stuffs**).
 They presents large transparent object dataset (10428 images) Trans10K, and they present TransLab neuran network, which outperformed all state-of-the-art segmentation networks in the task of segmenting transparent object (All models trained on Trans10K dataset).
 ### Advantages:
 - They use boundary detection to guide the main-stream transparent object detection.
 - They use dice-loss function for boundary detection.
 ### Notes:
 - They did not use **lovasz_hinge** loss function, which proved to out perform other loss functions in the task of segmentation.
+________________________________________________________________
+## Segmenting Transparent Object in the Wild with Transformer
+This paper is mainly an improvement over the previous work *Segmenting Transparent Objects in the Wild*.
+### The main improvements:
+- They classified 11 different transparent object class (instead of 2).
+- They used Transformer architecture, which provided larger scope and field of view.
+### Notes:
+- The structure is not descriped thoroughly.
