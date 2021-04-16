@@ -10,9 +10,10 @@ The main structure of the network is as follows:
 - Multilevel CCFE modules (each for a certain level of feature gotten from the feature extractor)
 - CCFE modules "*Contextual Contrasted Features Extraction*" are followed by **Deconve** , **Attention** , **Conv**, then **Sigmoid** to get the result mask.
 - Each mask (starting from the highest level (*smallest dimensions*)) is an additional input for the next level CCFE module (*it acts as a mask for the input of the next level*)
+![](MirrorNet_structure.png)
 ### CCFE modules:
 Each module consists of four chained CCFE blocks, and the output of each CCFE block are fused via an attention module to generate multi-level contextual contrasted features. *Contrasted to find the inconsistence to detect the mirrors.*
-
+![](MirrorNet_CCFE_modules.png)
 ### Problems and Disadvantages:
 - In each CCFE module there are 4 CCFE blocks, in each block the model uses **Four BatchNorm2d modules** which dramatically increase the variance of the training process (because it is batch dependent). Especially when the batch size is very small as in the case of huge neural networks as MirrorNet or GDNet.
 ________________________________________________________________
@@ -55,6 +56,7 @@ ________________________________________________________________
 ## Segmenting Transparent Objects in the Wild.
 This paper presents an improvment in the field of semantic segmentation for transparent objects (with two main classes **Things** & **Stuffs**).
 They presents large transparent object dataset (10428 images) Trans10K, and they present TransLab neuran network, which outperformed all state-of-the-art segmentation networks in the task of segmenting transparent object (All models trained on Trans10K dataset).
+![](TransLab_architecture.png)
 ### Advantages:
 - They use boundary detection to guide the main-stream transparent object detection.
 - They use dice-loss function for boundary detection.
@@ -63,8 +65,11 @@ They presents large transparent object dataset (10428 images) Trans10K, and they
 ________________________________________________________________
 ## Segmenting Transparent Object in the Wild with Transformer
 This paper is mainly an improvement over the previous work *Segmenting Transparent Objects in the Wild*.
+![](Trans2Seg.png)
 ### The main improvements:
 - They classified 11 different transparent object class (instead of 2).
 - They used Transformer architecture, which provided larger scope and field of view.
+- They used Transformer encoders and decoders.
+![](Trans2Seg_Decoder.png)
 ### Notes:
 - The structure is not descriped thoroughly.
