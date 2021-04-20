@@ -38,9 +38,9 @@ ________________________________________________________________
 ## Progressive Mirror Detection
 The main contributions of this paper are:
 ![](images/PMD_structure.png)
-- Relation Contextual Contrasted Local modules (*RRCL modules*)
+- Relation Contextual Contrasted Local modules (*RRCL modules*)  
 ![](images/RCCL_modules.png)
-- Edge Detection and Fusion modules. (*EDF modules*)
+- Edge Detection and Fusion modules. (*EDF modules*)  
 ![](images/EDF_module.png)
 The *RRCL modules* is different than  CCFE, because it does not only considers the contrast, but the similarities too.
 They consider the **Global Similarity (Global Relation)** of the global features extracted using *Global Feature Extractor* **GFE**, and they consider the **Local Contrast** using local features extracted using *Local Feature Extractor* **LFE**.
