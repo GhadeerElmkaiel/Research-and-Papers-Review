@@ -111,3 +111,20 @@ The main advantage of this work is that the presented modules (**PGM** and **RDM
 - There are multiple unclear points in the paper.
 - They didn't describe the loss function used for edge loss.
 - Their calculation is somehow complicated and not easy to follow without any visual representation.
+________________________________________________________________
+## FakeMiex Augmentation Improves Transparent Object Detection
+This paper presents two main contribution to improve the segmentation of transparent objects.
+![](images/FANet_architecture.png)
+### The main Contributions of this paper are:
+- Presented Fake-Mix data augmentation method, to solve the inbalance between the **Real transparent objects boundaries** and **Fake boundaries** and to improve the performance of boundary aware methods. Fake-Mix uses the real boundaries in one image to create a fake boundaries in another image. this is done by using the boundarie pixels from the firs image and put them in a random plance in the new image.  
+![](images/FANet_Fake-Mix.png)
+They tested multiple boundaries (zeros, random, mean) and found that using the first image pixels performes the best
+- Presented an improved ASPP module (**AdaptiveASPP**) which dynamically extract different features from multiple fields-of-view for boundary and segmentation branches.
+![](images/FANet_AdaptiveASPP.png)
+They showed that using AdaptiveASPP performs better than using two different ASPPs modules (one for each branch)
+### Advantages:
+Both FakeMix and AdaptiveASPP have shown to improve the performance and result in stat-of-the-art result in the task of transparent objects detection.
+They Tested and presented the results for different important hyper-parameters (number of fake boundaries, probability of adding fake boindaries, the type of fake boundaries)
+### Notes:
+- Everything is explained well.
+- They did not test lovasz-hinge loss function.
