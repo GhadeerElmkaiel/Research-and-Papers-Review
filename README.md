@@ -20,9 +20,11 @@ It contains color highlited papers for most interesting ideas persented in each 
 - Semantic MapNet Building Allocentric Semantic Maps and Representations from Egocentric Views
 
 ### **General-RL**
+More detailed review of *General-RL* papers can be found [here](Reviewd%20Papers/General-RL/README.md) 
 - Trust Region Policy Optimization (TRPO)
 - TD or not TD analyzing the role of temporal differencing in deep reinforcement learning
 - IMPALA Scalable Distributed Deep_RL with Importance Weighted Actor_Learner Architectures
+- Reinforcement Learning using Guided Observability
 
 ### **Classification, Detection, and Segmentation**
 More detailed review of *Classification, Detection, and Segmentation* papers can be found [here](Reviewd%20Papers/Classification,%20Detection,%20and%20Segmentation/README.md) 
