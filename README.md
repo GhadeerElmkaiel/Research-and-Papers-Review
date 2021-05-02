@@ -33,5 +33,6 @@ More detailed review of *Classification, Detection, and Segmentation* papers can
 - Learning a Discriminative Feature Network for Semantic Segmentation.
 - Segmenting Transparent Objects in the Wild.
 - Segmenting Transparent Object in the Wild with Transformer.
-
+- EBLNet Enhanced Boundary Learning for Glass-like Object Segmentation.
+- FakeMix Augmentation Improves Transparent Object Detection.
 
